@@ -1,27 +1,12 @@
 package timus.task_1585;
 
-import java.util.Scanner;
-import java.util.*;
-
 public class task_1585 {
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        scanner.nextLine(); // считываем перевод строки после n
-        HashMap<String, Integer> penguins = new HashMap<>();
-        for (int i = 0; i < n; i++) {
-            String type = scanner.nextLine();
-            penguins.put(type, penguins.getOrDefault(type, 0) + 1);
+        int krasota = 12, um = 18;
+        int sovest;
+        while(krasota > um){
+            System.out.println(sovest = krasota - um);
         }
-        String maxType = "";
-        int maxCount = 0;
-        for (String type : penguins.keySet()) {
-            int count = penguins.get(type);
-            if (count > maxCount) {
-                maxType = type;
-                maxCount = count;
-            }
-        }
-        System.out.println(maxType);
     }
 }
